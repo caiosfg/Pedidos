@@ -33,7 +33,7 @@ public class PedidosRepository : IPedidosRepository
         using var connection = new NpgsqlConnection(_connectionString);
 
         await connection.ExecuteAsync(
-            "DELETE * FROM pedido WHERE id = @id",
+            "DELETE FROM pedido WHERE id = @id",
             new {id}
         );
     }
@@ -51,9 +51,7 @@ public class PedidosRepository : IPedidosRepository
     {
         using var connection = new NpgsqlConnection(_connectionString);
 
-        return (Pedido?)await connection.QueryAsync<Pedido>(
-            "SELECT * FROM pedido"
-        );
+        return await connection.QueryFirstOrDefaultAsync<Pedido>("SELECT * FROM pedido where id = @id", new { id });
     }
 
     public async Task<Pedido> UpdatePedidoAsync(Pedido pedidos)

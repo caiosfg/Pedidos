@@ -9,5 +9,5 @@ public interface IPedidosRepository
     Task<Pedido> UpdatePedidoAsync(Pedido pedido);
     Task DeletePedidoAsync(int id);
     Task<IEnumerable<Pedido>> GetAllPedidosAsync();
-    Task<Pedido?> GetPedidosByIdAsync(int id);
+    Task<Pedido> GetPedidosByIdAsync(int id);
 }
