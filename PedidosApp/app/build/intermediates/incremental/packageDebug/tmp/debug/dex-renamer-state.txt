@@ -1,4 +1,4 @@
-#Thu Feb 20 15:22:42 BRT 2025
+#Thu Feb 20 15:50:35 BRT 2025
 base.0=C\:\\Users\\caio\\Documents\\github\\pedidos\\PedidosApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\caio\\Documents\\github\\pedidos\\PedidosApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\caio\\Documents\\github\\pedidos\\PedidosApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
