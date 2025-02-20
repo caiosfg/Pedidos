@@ -45,7 +45,7 @@ namespace Pedidos.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Pedido");
+                    b.ToTable("pedido");
                 });
 #pragma warning restore 612, 618
         }

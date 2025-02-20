@@ -12,7 +12,7 @@ namespace Pedidos.API.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Pedido",
+                name: "pedido",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -24,7 +24,7 @@ namespace Pedidos.API.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Pedido", x => x.Id);
+                    table.PrimaryKey("PK_pedido", x => x.Id);
                 });
         }
 
@@ -32,7 +32,7 @@ namespace Pedidos.API.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Pedido");
+                name: "pedido");
         }
     }
 }
