@@ -1,4 +1,6 @@
 using System;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Pedidos.API.Models.DTOs;
 
@@ -19,5 +21,4 @@ public class PedidosUpdateDto
     
     [Required]
     public float Price { get; set; }
-}
 }

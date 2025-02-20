@@ -6,8 +6,8 @@ namespace Pedidos.API.Mappers;
 
 public static class PedidosMapper
 {
-    public static Pedidos ToPedidos(this PedidosCreateDto pedidosCreate) {
-        return new Pedidos
+    public static Pedido ToPedidos(this PedidosCreateDto pedidosCreate) {
+        return new Pedido
         {
             NameClient = pedidosCreate.NameClient,
             Product = pedidosCreate.Product,
@@ -15,8 +15,8 @@ public static class PedidosMapper
             Price = pedidosCreate.Price
         };
     }
-    public static Pedidos ToPedidos(this PedidosUpdateDto pedidosUpdate) {
-        return new Pedidos
+    public static Pedido ToPedidos(this PedidosUpdateDto pedidosUpdate) {
+        return new Pedido
         {
             Id = pedidosUpdate.Id,
             NameClient = pedidosUpdate.NameClient,
@@ -25,7 +25,7 @@ public static class PedidosMapper
             Price = pedidosUpdate.Price
         };
     }
-    public static PedidosReadDto ToPedidosReadDto(this Pedidos pedidos) {
+    public static PedidosReadDto ToPedidosReadDto(this Pedido pedidos) {
         return new PedidosReadDto
         {
             Id = pedidos.Id,

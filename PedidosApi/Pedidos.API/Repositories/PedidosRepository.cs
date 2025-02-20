@@ -15,17 +15,17 @@ public class PedidosRepository : IPedidosRepository
         _config = config;
         _connectionString = _config.GetConnectionString("DefaultConnection");
     }
-    public async Task<Pedidos> CreatePedidoAsync(Pedidos pedidos)
+    public async Task<Pedido> CreatePedidoAsync(Pedido pedido)
     {
         using var connection = new NpgsqlConnection(_connectionString);
 
         var createdId = await connection.ExecuteScalarAsync<int>(
             "INSERT INTO pedidos (NameClient, Product, Amount, Price) VALUES (@NameClient, @Product, @Amount, @Price);select lastval();",
-            pedidos
+            pedido
         );
-        pedidos.Id = createdId;
+        pedido.Id = createdId;
 
-        return pedidos;
+        return pedido;
     }
 
     public  async Task DeletePedidoAsync(int id)
@@ -38,25 +38,25 @@ public class PedidosRepository : IPedidosRepository
         );
     }
 
-    public async Task<IEnumerable<Pedidos>> GetAllPedidosAsync()
+    public async Task<IEnumerable<Pedido>> GetAllPedidosAsync()
     {
         using var connection = new NpgsqlConnection(_connectionString);
 
-        return await connection.QueryAsync<Pedidos>(
+        return await connection.QueryAsync<Pedido>(
             "SELECT * FROM Pedidos"
         );
     }
 
-    public async Task<Pedidos?> GetPedidosByIdAsync(int id)
+    public async Task<Pedido?> GetPedidosByIdAsync(int id)
     {
         using var connection = new NpgsqlConnection(_connectionString);
 
-        return await connection.QueryAsync<Pedidos>(
+        return (Pedido?)await connection.QueryAsync<Pedido>(
             "SELECT * FROM Pedidos"
         );
     }
 
-    public async Task<Pedidos> UpdatePedidoAsync(Pedidos pedidos)
+    public async Task<Pedido> UpdatePedidoAsync(Pedido pedidos)
     {
         using var connection = new NpgsqlConnection(_connectionString);
 

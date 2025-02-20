@@ -2,7 +2,7 @@ using System;
 
 namespace Pedidos.API.Models;
 
-public class Pedidos
+public class Pedido
 {
     public int Id { get; set; }
     public string NameClient { get; set; } = string.Empty;
