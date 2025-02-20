@@ -20,10 +20,10 @@ public class PedidosRepository : IPedidosRepository
         using var connection = new NpgsqlConnection(_connectionString);
 
         var createdId = await connection.ExecuteScalarAsync<int>(
-            "INSERT INTO Pedido (NameClient, Product, Amount, Price) VALUES (@NameClient, @Product, @Amount, @Price);select lastval();",
+            "INSERT INTO pedido (nameclient, product, amount, price) VALUES (@nameclient, @product, @amount, @price);select lastval();",
             pedido
         );
-        pedido.Id = createdId;
+        pedido.id = createdId;
 
         return pedido;
     }
@@ -33,7 +33,7 @@ public class PedidosRepository : IPedidosRepository
         using var connection = new NpgsqlConnection(_connectionString);
 
         await connection.ExecuteAsync(
-            "DELETE * FROM Pedido WHERE Id = @Id",
+            "DELETE * FROM pedido WHERE id = @id",
             new {id}
         );
     }
@@ -43,7 +43,7 @@ public class PedidosRepository : IPedidosRepository
         using var connection = new NpgsqlConnection(_connectionString);
 
         return await connection.QueryAsync<Pedido>(
-            "SELECT * FROM Pedido"
+            "SELECT * FROM pedido"
         );
     }
 
@@ -52,7 +52,7 @@ public class PedidosRepository : IPedidosRepository
         using var connection = new NpgsqlConnection(_connectionString);
 
         return (Pedido?)await connection.QueryAsync<Pedido>(
-            "SELECT * FROM Pedido"
+            "SELECT * FROM pedido"
         );
     }
 
@@ -61,7 +61,7 @@ public class PedidosRepository : IPedidosRepository
         using var connection = new NpgsqlConnection(_connectionString);
 
         await connection.ExecuteAsync(
-            "UPDATE Pedido SET NameClient = @NameClient, Product = @Product, Amount = @Amount, Price = @Price WHERE Id = @Id",
+            "UPDATE pedido SET nameclient = @nameclient, product = @product, amount = @amount, price = @price WHERE id = @id",
             pedidos
         );
 

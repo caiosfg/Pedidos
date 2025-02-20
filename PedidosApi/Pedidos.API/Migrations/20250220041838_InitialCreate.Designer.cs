@@ -26,29 +26,29 @@ namespace Pedidos.API.Migrations
 
             modelBuilder.Entity("Pedidos.API.Models.Pedido", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Amount")
+                    b.Property<int>("amount")
                         .HasColumnType("integer");
 
-                    b.Property<string>("NameClient")
+                    b.Property<string>("nameclient")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<float>("Price")
+                    b.Property<float>("price")
                         .HasColumnType("real");
 
-                    b.Property<string>("Product")
+                    b.Property<string>("product")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
+                    b.HasKey("id");
 
-                    b.ToTable("Pedido");
+                    b.ToTable("pedido");
                 });
 #pragma warning restore 612, 618
         }

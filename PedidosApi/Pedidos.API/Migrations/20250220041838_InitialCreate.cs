@@ -15,12 +15,12 @@ namespace Pedidos.API.Migrations
                 name: "pedido",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    NameClient = table.Column<string>(type: "text", nullable: false),
-                    Product = table.Column<string>(type: "text", nullable: false),
-                    Amount = table.Column<int>(type: "integer", nullable: false),
-                    Price = table.Column<float>(type: "real", nullable: false)
+                    nameclient = table.Column<string>(type: "text", nullable: false),
+                    product = table.Column<string>(type: "text", nullable: false),
+                    amount = table.Column<int>(type: "integer", nullable: false),
+                    price = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
                 {
