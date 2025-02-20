@@ -23,7 +23,7 @@ namespace Pedidos.API.Controllers
             {
                 var pedidos = await _pedidosRepository.CreatePedidoAsync(pedidosCreateDto.ToPedidos());
 
-                return CreatedAtRoute(nameof(GetPedidosByIdAsync), new {Id = pedidos.Id}, pedidos.ToPedidosReadDto());
+                return CreatedAtRoute(nameof(GetPedidosByIdAsync), new {id = pedidos.id}, pedidos.ToPedidosReadDto());
             }
             catch (Exception ex)
             {
@@ -54,7 +54,7 @@ namespace Pedidos.API.Controllers
         {
             try
             {
-                if (id != pedidosUpdateDto.Id)
+                if (id != pedidosUpdateDto.id)
                 {
                     return BadRequest("Ids nao coincide");
                 }

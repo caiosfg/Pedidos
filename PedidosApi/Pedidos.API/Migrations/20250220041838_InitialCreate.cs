@@ -24,7 +24,7 @@ namespace Pedidos.API.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_pedido", x => x.Id);
+                    table.PrimaryKey("PK_pedido", x => x.id);
                 });
         }
 
