@@ -20,7 +20,7 @@ public class PedidosRepository : IPedidosRepository
         using var connection = new NpgsqlConnection(_connectionString);
 
         var createdId = await connection.ExecuteScalarAsync<int>(
-            "INSERT INTO pedidos (NameClient, Product, Amount, Price) VALUES (@NameClient, @Product, @Amount, @Price);select lastval();",
+            "INSERT INTO pedido (NameClient, Product, Amount, Price) VALUES (@NameClient, @Product, @Amount, @Price);select lastval();",
             pedido
         );
         pedido.Id = createdId;
