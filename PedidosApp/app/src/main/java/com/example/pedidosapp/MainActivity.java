@@ -1,5 +1,8 @@
 package com.example.pedidosapp;
 
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -9,6 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    Button button  ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +24,16 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        button = findViewById(R.id.button);
+        button.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(MainActivity.this,PedidosActivity.class);
+                        startActivity(i);
+                    }
+                }
+        );
     }
 }

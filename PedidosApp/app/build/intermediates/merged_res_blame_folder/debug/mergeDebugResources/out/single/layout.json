@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.pedidosapp-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "com.example.pedidosapp-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.pedidosapp-mergeDebugResources-31:/layout/activity_pedidos.xml",
+        "source": "com.example.pedidosapp-main-34:/layout/activity_pedidos.xml"
+    }
+]

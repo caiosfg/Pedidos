@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pedidosapp.test.app-debugAndroidTest-4:/values-v18_values-v18.arsc.flat",
+            "outputFile": "com.example.pedidosapp.test.app-debugAndroidTest-5:/values-v18_values-v18.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\caio\\.gradle\\caches\\8.10.2\\transforms\\76b9e4cd130a6b16bf7d3ea8d36a8595\\transformed\\core-1.6.1\\res\\values-v18\\values.xml",
+                    "source": "C:\\Users\\caio\\.gradle\\caches\\8.10.2\\transforms\\150a078ac26ea646e5ae01e0cd154f8d\\transformed\\core-1.6.1\\res\\values-v18\\values.xml",
                     "from": {
                         "startLines": "4,12",
                         "startColumns": "0,0",
@@ -25,34 +25,34 @@
             ]
         },
         {
-            "outputFile": "com.example.pedidosapp.test.app-debugAndroidTest-4:/values-v21_values-v21.arsc.flat",
+            "outputFile": "com.example.pedidosapp.test.app-debugAndroidTest-5:/values-v28_values-v28.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\caio\\.gradle\\caches\\8.10.2\\transforms\\76b9e4cd130a6b16bf7d3ea8d36a8595\\transformed\\core-1.6.1\\res\\values-v21\\values.xml",
+                    "source": "C:\\Users\\caio\\.gradle\\caches\\8.10.2\\transforms\\150a078ac26ea646e5ae01e0cd154f8d\\transformed\\core-1.6.1\\res\\values-v28\\values.xml",
                     "from": {
                         "startLines": "4,13",
                         "startColumns": "0,0",
-                        "startOffsets": "146,621",
+                        "startOffsets": "146,625",
                         "endLines": "12,21",
                         "endColumns": "8,8",
-                        "endOffsets": "620,1093"
+                        "endOffsets": "624,1101"
                     },
                     "to": {
                         "startLines": "2,11",
                         "startColumns": "4,4",
-                        "startOffsets": "55,534",
+                        "startOffsets": "55,538",
                         "endLines": "10,19",
                         "endColumns": "8,8",
-                        "endOffsets": "529,1006"
+                        "endOffsets": "533,1014"
                     }
                 }
             ]
         },
         {
-            "outputFile": "com.example.pedidosapp.test.app-debugAndroidTest-4:/values_values.arsc.flat",
+            "outputFile": "com.example.pedidosapp.test.app-debugAndroidTest-5:/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\caio\\.gradle\\caches\\8.10.2\\transforms\\76b9e4cd130a6b16bf7d3ea8d36a8595\\transformed\\core-1.6.1\\res\\values\\values.xml",
+                    "source": "C:\\Users\\caio\\.gradle\\caches\\8.10.2\\transforms\\150a078ac26ea646e5ae01e0cd154f8d\\transformed\\core-1.6.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,11",
                         "startColumns": "0,0",
@@ -73,25 +73,25 @@
             ]
         },
         {
-            "outputFile": "com.example.pedidosapp.test.app-debugAndroidTest-4:/values-v28_values-v28.arsc.flat",
+            "outputFile": "com.example.pedidosapp.test.app-debugAndroidTest-5:/values-v21_values-v21.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\caio\\.gradle\\caches\\8.10.2\\transforms\\76b9e4cd130a6b16bf7d3ea8d36a8595\\transformed\\core-1.6.1\\res\\values-v28\\values.xml",
+                    "source": "C:\\Users\\caio\\.gradle\\caches\\8.10.2\\transforms\\150a078ac26ea646e5ae01e0cd154f8d\\transformed\\core-1.6.1\\res\\values-v21\\values.xml",
                     "from": {
                         "startLines": "4,13",
                         "startColumns": "0,0",
-                        "startOffsets": "146,625",
+                        "startOffsets": "146,621",
                         "endLines": "12,21",
                         "endColumns": "8,8",
-                        "endOffsets": "624,1101"
+                        "endOffsets": "620,1093"
                     },
                     "to": {
                         "startLines": "2,11",
                         "startColumns": "4,4",
-                        "startOffsets": "55,538",
+                        "startOffsets": "55,534",
                         "endLines": "10,19",
                         "endColumns": "8,8",
-                        "endOffsets": "533,1014"
+                        "endOffsets": "529,1006"
                     }
                 }
             ]

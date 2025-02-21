@@ -6,8 +6,14 @@ color ligth_blue
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable logo
+id button
+id imageView
 id main
+id textView
+id view
 layout activity_main
+layout activity_pedidos
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
