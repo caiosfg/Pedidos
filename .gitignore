@@ -1,6 +1,7 @@
 .db
 .vscode
 .idea
+*node_modules
 *.iml
 .gradle
 /local.properties
